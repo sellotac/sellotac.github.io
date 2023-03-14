@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellotac</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Shantell+Sans&family=Tangerine">
+    <script src="https://kit.fontawesome.com/7ec49247d0.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+</head>
+<body id="body">
+    <header>
+        <div class="brand">
+            <h1 id="mainPage" class="brand">Sellotac</h1>           
+           
+        </div>       
+        
+        <h2 class="brandsub">Fábrica de sellos en fotopolímero</h2>     
+
+       <div style="margin-bottom: 2vw;">
+            <a href="#" id="cartShop" class="cartShopping">Carrito de Compras
+            <i id="cartIcon" class="fa-solid fa-cart-shopping" style="">0</i>
+            </a> 
+            <a class="buttonMenu" id="actMenu">☰</a> 
+       </div> 
+        
+        
+
+    </header>
+    <table style="width: 100%; ">
+        <tr class="">
+            <td class=" " style="width: 260px; display: none;"  id="dropdownMenu">
+                <nav>                           
+                    <table class="sidebar  animate-top">
+                        <tr>
+                            <td>
+                                <a href="#" id="sellosEscolares">Sellos escolares</a>
+                            </td>                    
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" id="sellosProfesionales">Sellos profesionales</a>
+                            </td>                    
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" id="sellosMadera">Sellos madera</a>
+                            </td>                    
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" id="sellosRopa">Sellos ropa</a>
+                            </td>                    
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" id="sellosFechadores">Sellos fechadores</a>
+                            </td>                    
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" id="sellosPocket">Sellos pocket</a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" id="sellosMasVendidos">Sellos mas vendidos</a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" id="sellosNovedosos">Sellos novedosos</a>
+                            </td>
+
+                        </tr>
+                    </table>          
+                </nav>
+            </td>
+            <td>
+                <section id="section"></section>
+            </td>
+        </tr>
+    </table>
+    <div style="padding: 30px; margin: 30px;"></div>
+    <!--Modal Carrito de Compras-->
+
+    <div id="modalShop" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span id="closex" class="close">&times;</span>
+            <h2><i class="fa-solid fa-cart-shopping" style="padding-right: 5px;"></i>Carrito de Compras</h2>
+          </div>
+          <div class="modal-body">
+            <table style="width: 100%;">
+                <tr id="lineescolares">
+                    <td><img id="" src="./img/CarrouselEscolares/Carrousel1.jpeg" alt="Imagen de sello Trodat" style="width: 30px; height: 30px; border-radius: 10%;"></td>
+                    <td>Sellos Escolares</td>  
+                    <td id="amountescolares">0</td>  
+                    <td><span id="removeescolares" class="closedark">&times;</span></td>
+                </tr>
+                <tr id="lineprofesionales">
+                    <td><img id="" src="./img/CarrouselProfesionales/Carrousel1.jpeg" alt="Imagen de sello Trodat" style="width: 30px; height: 30px; border-radius: 10%;"></td>
+                    <td>Sellos Profecionales</td>     
+                    <td id="amountprofesionales" >0</td>   
+                    <td><span id="removeprofesionales" class="closedark">&times;</span></td>
+                </tr>
+                <tr id="linemadera">
+                    <td><img id="" src="./img/CarrouselMadera/Carrousel1.jpeg" alt="Imagen de sello Trodat" style="width: 30px; height: 30px; border-radius: 10%;"></td>
+                    <td>Sellos Madera</td>   
+                    <td id="amountmadera" >0</td>   
+                    <td><span id="removemadera" class="closedark">&times;</span></td>
+                </tr>
+                <tr id="lineropa">
+                    <td><img id="" src="./img/CarrouselRopa/Carrousel1.jpeg" alt="Imagen de sello Trodat" style="width: 30px; height: 30px; border-radius: 10%;"></td>
+                    <td>Sellos Ropa</td>   
+                    <td id="amountropa" >0</td>  
+                    <td><span id="removeropa" class="closedark">&times;</span></td>
+                </tr>
+                <tr id="linepocket">
+                    <td><img id="" src="./img/CarrouselPocket/Carrousel1.jpeg" alt="Imagen de sello Trodat" style="width: 30px; height: 30px; border-radius: 10%;"></td>
+                    <td>Sellos Pocket</td>   
+                    <td id="amountpocket" >0</td>  
+                    <td><span id="removepocket" class="closedark">&times;</span></td> 
+                </tr>
+                <tr id="linefechadores">
+                    <td><img  src="./img/CarrouselFechadores/Carrousel1.jpeg" alt="Imagen de sello Trodat" style="width: 30px; height: 30px; border-radius: 10%;"></td>
+                    <td>Sellos Fechadores</td>   
+                    <td id="amountfechadores" >0</td>  
+                    <td><span id="removefechadores" class="closedark">&times;</span></td>
+                </tr>
+              </table>
+          </div>
+          <div class="modal-footer">
+            <table>
+                <tr>
+                    <td>Consulte por su compra con nuestros vendedores:</td>
+                    <td id="whatsapp"><a  href="https://wa.me/5492234368578?text=Yo%20interesado%20en%20sellos" target="_blank" style="color: green; margin-left: 30px; font-size: 4vw;">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a></td>
+                  </tr>
+            </table>
+            
+          </div>
+        </div>
+      
+      </div>
+    <footer id="footerMain" class="footerStyle"></footer>
+    
+    <script type="text/javascript" src="./main/main.js"></script> 
+    <script type="text/javascript" src="./main/htmlView.js"></script> 
+</body>
+</html>

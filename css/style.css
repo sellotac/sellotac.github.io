@@ -1,0 +1,229 @@
+body {     
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 37%, rgba(205,205,228,1) 82%, rgba(181,183,184,1) 100%); 
+    font-family: 'roboto', serif;   
+    margin-left: 0%;
+}
+
+.brand {
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 5px;
+    font-size:8vw;
+    font-family: "Shantell Sans", serif; 
+    /*border: black solid;
+    /* border-radius: 50px 50px 50px 50px; */
+  }
+  .brandsub {
+    text-align: center;
+    margin-top: 0%;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 5px;    
+    font-family: "Shantell Sans", serif;
+    font-size:3vw;
+  }
+
+.footerStyle{
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: lightgrey;
+    opacity: 80%;
+    border-radius: 6px 6px 0px 0px;
+    text-align: center;
+}
+.sidebar{
+    height:300px;
+    width:100%;
+    z-index: 1;
+    overflow-x: hidden;
+    background-color:rgba(181,183,184,1) ;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 0%;
+    padding: 0px;
+    opacity: 90%;
+    padding: auto;    
+}
+.sidebar tr:nth-child(even){background-color: #f2f2f2;}
+
+.sidebar tr:hover {background-color: #ddd;}
+a{
+    text-transform: capitalize;
+    text-align: left;  
+    color: white;    
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 5px;        
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #454140;    
+}
+
+a:active {
+    text-decoration: underline;
+    color:  #c1502e;
+}
+.buttonMenu{
+    width: 5%;
+    height: 32px;
+    font-size:22px;
+    padding-left: 1%;
+}
+.animate-zoom {
+    animation:animatezoom 0.6s
+}
+
+@keyframes animatezoom{
+        from{
+            transform:scale(0)
+        } 
+        to{
+            transform:scale(1)
+        }
+}
+
+
+.animate-top{
+    position:relative;
+    animation:animatetop 0.4s
+}
+@keyframes animatetop{
+    from{
+        top:-30px;
+        opacity:0
+    } 
+    to{
+        top:0;
+        opacity:1
+    }
+}
+.cartShopping{
+    font-size:2vw; 
+    z-index: 1; 
+    position: absolute; 
+    
+    right: 5%; 
+    background: lightgrey; 
+    opacity: 80%; 
+    border-radius: 10px;    
+}
+.buy{
+    font-size:110%; 
+    text-align: center;
+    z-index: 1; 
+    position: relative; 
+    bottom: 0px;
+    background: #F1713F; 
+    opacity: 80%; 
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*Style Modal*/
+/* The Modal (background) */
+.modal { /* la caja que esta detras de la ventana modal(el fondo) ocupa toda la pagina*/
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */    
+    opacity: 80%;    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: rgba(255,255,255,1) ;    
+    margin: auto;
+    padding: 0;
+    /*border: 1px solid red;*/   
+    border-radius: 10px; 
+    width: 70vw;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+   
+  .close:hover,
+  .close:focus {
+    color: #454140;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .closedark {
+    color: darkred;
+    float: right;
+    padding-left: 12px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .closedark:hover,
+  .closedark:focus {
+    color: #454140;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #F1713F;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+  }
+  
+  .modal-body {
+    padding: 2px 16px;
+    width:80%; 
+    font-size: 20px;
+}
+
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #F1713F;
+    color: white;
+    border-radius: 0 0 10px 10px;
+  }
