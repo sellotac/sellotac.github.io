@@ -21,10 +21,11 @@ let menuView=(event) => //
         };
     }, 100);
     
+    /*
     console.log("el evento que llega al analizador es: ", event);
     console.log("el id del elemento que generó el evento es: ",event.target.id);
     console.log("el elemento que generó el evento es: "+elementOrigin);
-    
+    */
     //EVENTOS DEL CARRITO DE COMPRAS
     switch (eventId) {        
         case "removefechadores":
