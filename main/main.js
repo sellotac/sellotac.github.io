@@ -6,10 +6,10 @@ localStorage.setItem('cartObject', JSON.stringify(cartObject));
 let menuView=(event) => //
 {
     let eventId= event.target.id;
-    /* let elementOrigin= event.originalTarget.tagName;
+    let elementOrigin= event.target.nodeName;
     if(elementOrigin !== "I"){
         event.preventDefault();//detiene la propagación del evento por defecto, es útil para que los <a> no desplacen la pantalla.
-    }     */
+    };     
     if(eventId === 'actMenu'){
         document.getElementById('actMenu').style.display = "none";
         document.getElementById('dropdownMenu').style.display = "block";    
