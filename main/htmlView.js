@@ -196,12 +196,11 @@ let htmlSellosRopa=() =>{
 
     let ropaDescription=`
         <h2 style="font-family: Shantell Sans, serif;">Nuestros Sellos para ROPA:</h2>
-        <p>Ropa, sit amet consectetur adipisicing elit. Dolor at laboriosam
-            tempore molestiae deleniti culpa iusto aut neque corporis libero placeat ea, 
-            sequi voluptas nihil ad reprehenderit inventore, nam expedita!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor at laboriosam 
-            tempore molestiae deleniti culpa iusto aut neque corporis libero placeat ea, 
-            sequi voluptas nihil ad reprehenderit inventore, nam expedita!</p>
+        <p>Sellos automáticos para Ropa, resistente a varios lavados. Súper práctico para rotular 
+            la ropa del cole, las mudas, los barbijos, para el cole, para la colonia o para el club!<br>
+            Son de excelente calidad y mucha duración.<br>
+            Incluye: almohadilla entintada tinta negra.
+        </p>
             <p>Hace click en el menu para ver nuestros productos, agregá el tipo de sello que te guste 
                 al carrito y consultá con nuestros vendedores por tu diseño.</p>
             <p>Te vas a sorprender al ver tu idea materializada en un sello y disponible para utilizarla cuando quieras.
